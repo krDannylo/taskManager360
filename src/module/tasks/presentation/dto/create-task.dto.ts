@@ -10,7 +10,7 @@ export class CreateTaskDto {
   @IsOptional()
   description?: string;
 
-  @IsString()
+  @IsEnum(TaskStatus)
   @IsOptional()
   status?: TaskStatus;
 }
