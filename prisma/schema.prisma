@@ -28,7 +28,7 @@ model Task {
   id          String     @id @default(uuid())
   title       String
   description String?
-  status      TaskStatus @default(pendente)
+  status      TaskStatus @default(PENDING)
   userId      String
   user        User       @relation(fields: [userId], references: [id])
   createdAt   DateTime   @default(now())
@@ -38,7 +38,7 @@ model Task {
 }
 
 enum TaskStatus {
-  pendente
-  em_andamento
-  concluida
+  PENDING
+  WIP
+  DONE
 }
