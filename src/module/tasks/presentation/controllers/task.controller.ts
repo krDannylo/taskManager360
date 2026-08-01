@@ -19,8 +19,8 @@ import { DeleteTaskUseCase } from '../../application/use-cases/delete-task.use-c
 import { CreateTaskDto } from '../dto/create-task.dto';
 import { UpdateTaskDto } from '../dto/update-task.dto';
 import { TaskStatus } from '../../domain/entities/task.entity';
-import { JwtAuthGuard } from 'src/module/auth/infraestructure/guards/jwt-auth.guard';
 import { FindOneTaskUseCase } from '../../application/use-cases/find-one-task.use.case';
+import { JwtAuthGuard } from '../../../auth/infrastructure/guards/jwt-auth.guard';
 
 @UseGuards(JwtAuthGuard)
 @Controller('tasks')

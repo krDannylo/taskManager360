@@ -5,7 +5,7 @@ import { UsersModule } from '../users/users.module';
 import { SignUpUseCase } from './application/use-cases/sign-up.use-case';
 import { SignInUseCase } from './application/use-cases/sign-in.use-case';
 import { AuthController } from './presentation/controllers/auth.controller';
-import { JwtStrategy } from './infraestructure/strategies/jwt.strategy';
+import { JwtStrategy } from './infrastructure/strategies/jwt.strategy';
 import { ConfigService } from '@nestjs/config';
 
 @Module({
