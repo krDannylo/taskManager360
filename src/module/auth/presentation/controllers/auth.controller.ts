@@ -12,13 +12,14 @@ export class AuthController {
   ) {}
 
   @Post('signUp')
-  signUp(@Body() dto: SignUpDto) {
-    return this.signUpUseCase.execute(dto);
+  @HttpCode(HttpStatus.CREATED)
+  signUp(@Body() signUpDto: SignUpDto) {
+    return this.signUpUseCase.execute(signUpDto);
   }
 
   @Post('signIn')
   @HttpCode(HttpStatus.OK)
-  signIn(@Body() dto: SignInDto) {
-    return this.signInUseCase.execute(dto.email, dto.password);
+  signIn(@Body() signInDto: SignInDto) {
+    return this.signInUseCase.execute(signInDto.email, signInDto.password);
   }
 }
