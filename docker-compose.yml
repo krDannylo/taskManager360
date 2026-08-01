@@ -13,7 +13,6 @@ services:
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
-    restart: always
     command: sh ./entrypoint.sh
 
   db:
