@@ -8,7 +8,7 @@ until pg_isready -h db -U "$POSTGRES_USER" -d "$POSTGRES_DB"; do
 done
 echo "Banco de dados Pronto!"
 
-echo "Executando Prisma Generate"
+echo "Executando Prisma Generate.."
 npx prisma generate
 
 echo "Executando Migrations.."
