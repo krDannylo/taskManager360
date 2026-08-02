@@ -57,8 +57,6 @@ Na raiz do projeto estão disponíveis os arquivos de exemplo das variáveis de 
 
 Crie uma cópia do arquivo correspondente ao ambiente que será utilizado, renomeando-o para `.env` ou `.env.docker`.
 
-Caso execute a aplicação localmente, ajuste os valores das variáveis de acordo com a configuração do seu ambiente, como credenciais do banco de dados, porta da aplicação e demais parâmetros necessários.
-
 Agora siga os passos conforme o ambiente que será utilizado.
 
 ### Ambiente Docker
@@ -71,7 +69,17 @@ A aplicação estará disponível em `http://localhost:3001` pós todo o process
 
 ### Ambiente Local
 
-- //Todo
+Caso execute a aplicação localmente, ajuste os valores das variáveis no `.env` conforme a configuração do seu ambiente, como credenciais do banco de dados, porta local, porta da aplicação e demais parâmetros necessários.
+
+- Execute:
+```
+npx prisma generate
+```
+
+- Em seguida, para criar e subir as migrations execute:
+```
+npx prisma migrate dev --name init
+```
 
 ### Scripts disponíveis
 
