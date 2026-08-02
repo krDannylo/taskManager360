@@ -61,6 +61,8 @@ Agora siga os passos conforme o ambiente que será utilizado.
 
 ### Ambiente Docker
 
+**Importante**: Antes de executar a aplicação com Docker, verifique se o arquivo entrypoint.sh está salvo com finais de linha no formato LF. Arquivos no formato CRLF podem causar erros de sintaxe ao serem executados no ambiente Linux do container.
+
 - Execute:
 ```bash
 docker compose up --build -d
