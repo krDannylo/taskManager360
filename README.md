@@ -125,3 +125,24 @@ src/
 ├── app.module.ts              # Módulo raiz da aplicação
 └── main.ts                    # Ponto de entrada da aplicação
 ```
+
+## Requisitos Implementados
+
+1. ✅ **Autenticação**  
+
+2. ✅ **CRUD de tarefas** 
+
+3. ✅ **Regras de Negócio**
+
+
+## Extras
+
+1. ❌ **Testes automatizados para CRUD**  
+
+2. ✅ **Autenticação**  
+
+3. ✅ **Filtro de tarefas por Status** 
+
+4. ✅ **Documentação da API**
+
+5. ✅ **Uso de design patterns**
